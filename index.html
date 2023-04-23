@@ -23,33 +23,60 @@
     h1 {
       font-size: 1.7rem
     }
+
+    ul {
+      list-style: none;
+      padding: 0px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      width: 100%;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+
+    nav .navbar-links {
+      display: flex;
+      align-items: center;
+      column-gap: 1.5rem;
+    }
+
+    /* main */
+    .hero {
+      margin: 50px 0
+    }
   </style>
 </head>
 
 <body>
   <!-- header -->
   <header>
-    <ul>
-      <li>
-        <a href="#">
-          <img src="" alt="git github">
-        </a>
-      </li>
-      <li>
-        <a href="#">Hola mundo</a>
-      </li>
-      <li>
-        <a href="#">Codigo</a>
-      </li>
-    </ul>
+    <nav class="container">
+      <a href="#">
+        <img src="" alt="git github">
+      </a>
+      <ul class="navbar-links">
+        <li><a href="#">Hola mundo</a></li>
+        <li><a href="#">Codigo</a></li>
+      </ul>
+    </nav>
   </header>
   <!-- content -->
-  <main>
-    <h1>Git y github</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, similique consequuntur rem magnam error deserunt
-      impedit aperiam in inventore temporibus.
-    </p>
+  <main class="container">
+    <div class="hero">
+      <h1>Git y github</h1>
+      <p>
+        Git es un sistema de control de versiones, mientras que GitHub es una plataforma web de alojamiento de
+        repositorios Git que proporciona características adicionales para la colaboración en proyectos de software.
+      </p>
+    </div>
   </main>
   <!-- footer -->
   <footer></footer>

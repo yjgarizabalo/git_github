@@ -1,4 +1,4 @@
-# Git github
+# Git 🔀 github 🗃️
 
 Git es un sistema de control de versiones de código fuente que permite a los desarrolladores trabajar juntos en proyectos de software de manera eficiente y colaborativa. Con Git, los desarrolladores pueden realizar un seguimiento de los cambios en el código fuente a lo largo del tiempo, colaborar en equipo, revertir cambios y realizar pruebas de forma segura en diferentes ramas de desarrollo. Git fue creado por Linus Torvalds en 2005.
 
