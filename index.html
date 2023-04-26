@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
   <title>git github</title>
-
-
 
   <style>
     * {
@@ -29,6 +29,12 @@
 
     h2 {
       font-size: 1.5rem;
+      line-height: 1.5;
+    }
+
+    h3 {
+      line-height: 1.2rem;
+      line-height: 0.5;
     }
 
     ul {
@@ -44,7 +50,7 @@
 
     /* header */
     header {
-      background: #f1f1f1;
+      background: #f0f4f6;
       position: sticky;
       top: 0;
       left: 0;
@@ -71,20 +77,50 @@
     }
 
     /* main */
-    .hero {
+    main .hero {
       margin: 50px 0
     }
 
-    .content-code {
+    main .content-code {
       background: #091f2c;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0);
+      border-width: 1.5px;
       padding: 12px 15px;
       margin: 20px 0;
       color: #75b6e7;
       border-radius: 5px;
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
     }
 
-    .content {
-      margin: 20px 0px
+    main .content {
+      margin: 30px 0px
+    }
+
+    main .hero-buscar {
+      padding: 30px 0
+    }
+
+    main .buscar-comando {
+      background: #f0f4f6;
+      border-radius: 2px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0);
+      border-width: 1.5px;
+      margin: 0 24px;
+      height: 64px;
+      width: calc(100% - 62px);
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 400;
+      color: #1E1E1F;
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+      border-radius: 5px;
+    }
+
+    main .buscar-comando:focus {
+      outline-color: #75b6e7;
+      ;
     }
   </style>
 
@@ -106,7 +142,7 @@
   </header>
   <!-- content -->
   <main class="container">
-    <div class="hero">
+    <div class="hero" id="comandos">
       <h1>Git y github</h1>
       <p>
         Git es un sistema de control de versiones, mientras que GitHub es una plataforma web de alojamiento de
@@ -114,15 +150,106 @@
       </p>
     </div>
     <div class="hero">
-      <div class="content">
-        <h2>Comando basicos</h2>
+      <h2>Comando basicos</h2>
+
+      <div class="hero-buscar">
+        <input class="buscar-comando" type="text" placeholder="Buscar comando 🔍">
+        <div class="content">
+        </div>
+
+        <h3>git init</h3>
         <div class="content-code">git init</div>
-        <p>Nos ayuda a inicialicar un proyecto de git.</p>
+        <p> inicializa un repositorio de GIT en la carpeta donde se ejecute el comando.</p>
       </div>
 
+      <div class="content">
+        <h3>git add</h3>
+        <div class="content-code">git add</div>
+        <p>añade los archivos especificados al área de preparación (staging).</p>
+      </div>
 
-      <div class="content-code">gitk</div>
-      <p>Mostrar interfas grafica del repositorio</p>
+      <div class="content">
+        <h3>git commit -m</h3>
+        <div class="content-code">git commit -m "descripción o mensaje del commit"</div>
+        <p>confirma los archivos que se encuentran en el área de preparación y los agrega al repositorio.</p>
+      </div>
+
+      <div class="content">
+        <h3>git commit -am</h3>
+        <div class="content-code">git commit -am "descripción o mensaje del commit"</div>
+        <p>añade al staging area y hace un commit mediante un solo comando. (No funciona con archivos nuevos)
+        </p>
+      </div>
+
+      <div class="content">
+        <h3>git status</h3>
+        <div class="content-code">git status</div>
+        <p>ofrece una descripción del estado de los archivos (untracked, ready to commit, nothing to commit).
+        </p>
+      </div>
+
+      <div class="content">
+        <h3>git rm</h3>
+        <div class="content-code">git rm (. -r, filename) (–cached)</div>
+        <p>remueve los archivos del index</p>
+      </div>
+
+      <div class="content">
+        <h3>git log</h3>
+        <div class="content-code">git log</div>
+        <p> lista de manera descendente los commits realizados.</p>
+      </div>
+
+      <div class="content">
+        <h3>gitk</h3>
+        <div class="content-code">gitk</div>
+        <p>Mostrar interfas grafica del repositorio</p>
+      </div>
+    </div>
+
+    <div class="hero" id="hola_mundo">
+      <h2>Hola mundo 🌎</h2>
+      <div class="content">
+        <p>
+          <b>"Hola mundo"</b> es una de las frases más conocidas en el mundo de la programación y es utilizada como
+          ejemplo para mostrar cómo funciona un lenguaje de programación. Por lo general, se utiliza para escribir el
+          primer programa en un nuevo lenguaje o para demostrar el funcionamiento básico de un programa.
+        </p><br>
+        <p>
+          El código "Hola mundo" es muy sencillo, su función es simplemente imprimir en pantalla la frase "Hola mundo".
+          Por ejemplo, en el lenguaje de programación Python, el código "Hola mundo" se puede escribir así:
+        </p>
+        <div class="content-code">
+          print("Hola mundo 🌎")
+        </div>
+        <p>
+          Este código imprimirá la frase "Hola mundo" en la consola o en la terminal de la computadora. Aunque el código
+          en sí mismo no hace nada útil, es un punto de partida útil para aprender y entender cómo funciona un lenguaje
+          de programación y para familiarizarse con los conceptos básicos de programación.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero" id="github">
+      <h2>Github 💾</h2>
+      <div class="content">
+        <p>
+          <b>Github</b> es una herramienta muy útil para los programadores ya que les permite tener un control de
+          versiones de sus proyectos, lo que significa que pueden mantener un historial de cambios en el código a medida
+          que avanzan en su desarrollo. Esto es muy útil para trabajar en equipo o para volver a versiones anteriores
+          del código en caso de que se produzca un error o un problema.
+        </p><br>
+        <p>
+          Además, Github también permite a los desarrolladores crear y contribuir a proyectos de software de código
+          abierto, lo que significa que el código fuente está disponible para que cualquiera lo use, modifique o
+          distribuya de forma gratuita.
+        </p><br>
+        <p>
+          Github es una plataforma muy valiosa para los programadores, ya que les proporciona una serie de herramientas
+          que les permiten trabajar de manera más eficiente y colaborativa en sus proyectos de software. También es una
+          gran fuente de aprendizaje y colaboración en el mundo del desarrollo de software.
+        </p>
+      </div>
     </div>
   </main>
   <!-- footer -->
