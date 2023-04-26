@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>git github</title>
 
+
+
   <style>
     * {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     a {
@@ -21,7 +23,12 @@
     }
 
     h1 {
-      font-size: 1.7rem
+      font-size: 1.9rem;
+      line-height: 2
+    }
+
+    h2 {
+      font-size: 1.5rem;
     }
 
     ul {
@@ -33,6 +40,16 @@
       max-width: 960px;
       margin: auto;
       width: 100%;
+    }
+
+    /* header */
+    header {
+      background: #f1f1f1;
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
     }
 
     nav {
@@ -48,11 +65,29 @@
       column-gap: 1.5rem;
     }
 
+    nav .navbar-links a:hover {
+      transition: all 0.5s;
+      color: #75b6e7
+    }
+
     /* main */
     .hero {
       margin: 50px 0
     }
+
+    .content-code {
+      background: #091f2c;
+      padding: 12px 15px;
+      margin: 20px 0;
+      color: #75b6e7;
+      border-radius: 5px;
+    }
+
+    .content {
+      margin: 20px 0px
+    }
   </style>
+
 </head>
 
 <body>
@@ -60,11 +95,12 @@
   <header>
     <nav class="container">
       <a href="#">
-        <img src="" alt="git github">
+        <img src="./assets/img/git_github.png" width="100" alt="git github">
       </a>
       <ul class="navbar-links">
-        <li><a href="#">Hola mundo</a></li>
-        <li><a href="#">Codigo</a></li>
+        <li><a href="#hola_mundo">Hola mundo 🌎</a></li>
+        <li><a href="#comandos">Comandos mas usados 👩‍💻</a></li>
+        <li><a href="#github">Github 💾</a></li>
       </ul>
     </nav>
   </header>
@@ -77,9 +113,21 @@
         repositorios Git que proporciona características adicionales para la colaboración en proyectos de software.
       </p>
     </div>
+    <div class="hero">
+      <div class="content">
+        <h2>Comando basicos</h2>
+        <div class="content-code">git init</div>
+        <p>Nos ayuda a inicialicar un proyecto de git.</p>
+      </div>
+
+
+      <div class="content-code">gitk</div>
+      <p>Mostrar interfas grafica del repositorio</p>
+    </div>
   </main>
   <!-- footer -->
   <footer></footer>
+
 </body>
 
 </html>
