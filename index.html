@@ -37,6 +37,10 @@
       line-height: 0.5;
     }
 
+    p {
+      line-height: 1.7;
+    }
+
     ul {
       list-style: none;
       padding: 0px;
@@ -120,7 +124,35 @@
 
     main .buscar-comando:focus {
       outline-color: #75b6e7;
-      ;
+    }
+
+    /* footer */
+    footer {
+      background: #091f2c;
+      padding: 40px 0;
+      margin: 100px 0 0 0;
+    }
+
+    footer .footer-git-github {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    footer .footer-links {
+      display: flex;
+      align-items: center;
+      column-gap: 3.5rem;
+    }
+
+    footer .footer-links a {
+      color: #fff;
+    }
+
+    footer .footer-links a:hover {
+      color: #75b6e7;
+      transition: all 5s;
     }
   </style>
 
@@ -253,7 +285,15 @@
     </div>
   </main>
   <!-- footer -->
-  <footer></footer>
+  <footer>
+    <div class="footer-git-github">
+      <ul class="footer-links">
+        <li><a href="#hola_mundo">Hola mundo 🌎</a></li>
+        <li><a href="#comandos">Comandos mas usados 👩‍💻</a></li>
+        <li><a href="#github">Github 💾</a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
