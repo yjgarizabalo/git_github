@@ -237,6 +237,93 @@
         <div class="content-code">gitk</div>
         <p>Mostrar interfas grafica del repositorio</p>
       </div>
+
+      <div class="content">
+        <h3>git stash - git stash pop</h3>
+        <div class="content-code">git stash</div>
+        <p>es una forma conveniente de guardar temporalmente tus cambios no comprometidos en Git, para que puedas
+          trabajar en otras tareas sin tener que hacer compromisos parciales. Luego, puedes recuperar esos cambios
+          cuando estés listo para trabajar en ellos nuevamente.</p>
+
+        <p><b>git stash pop:</b> aplica los cambios almacenados en la última entrada del almacén de cambios y elimina
+          esa entrada del almacén. Git intentará aplicar los cambios en tu directorio de trabajo actual. Si la
+          aplicación de los cambios tiene éxito, Git eliminará la entrada del almacén de cambios.</p>
+      </div>
+
+      <div class="content">
+        <h3>git rebase</h3>
+        <div class="content-code">git rebase</div>
+        <p>El comando "git rebase" en Git se utiliza para combinar cambios de una rama a otra. Básicamente, reescribe el
+          historial de confirmaciones de una rama para que parezca que se basa directamente en otra rama.</p>
+        <p>
+          Cuando se ejecuta "git rebase", se selecciona una rama de origen y una rama de destino. Git busca los cambios
+          realizados en la rama de origen que no están en la rama de destino y los aplica uno por uno en la rama de
+          destino.
+        </p>
+      </div>
+
+      <div class="content">
+        <h3>git clean</h3>
+        <div class="content-code">git clean</div>
+        <p>El comando "git clean" es utilizado para eliminar archivos y directorios no rastreados en un repositorio Git.
+          En español, "git clean" se traduce como "limpiar".</p>
+      </div>
+
+      <div class="content">
+        <h3>git cherry-pick</h3>
+        <div class="content-code">git cherry-pick</div>
+        <p> se refiere a la acción de seleccionar un commit específico de una rama de desarrollo y aplicarlo en otra
+          rama. Esta terminología proviene del acto de seleccionar cuidadosamente solo las partes deseadas (las
+          "cerezas") de un conjunto más grande. (no es recomendable)</p>
+      </div>
+      <div class="content">
+        <h3>git shortlog -sn</h3>
+        <div class="content-code">git shortlog -sn</div>
+        <p>muestra cuantos commit han hecho cada miembros del equipo.</p>
+      </div>
+
+      <div class="content">
+        <h3>git shortlog -sn --all</h3>
+        <div class="content-code">git shortlog -sn --all</div>
+        <p>muestra cuantos commit han hecho cada miembros del equipo hasta los que han sido eliminado.</p>
+      </div>
+
+      <div class="content">
+        <h3>git shortlog -sn --all --no-merge</h3>
+        <div class="content-code">git shortlog -sn --all --no-merge</div>
+        <p>muestra cuantos commit han hecho cada miembros quitando los eliminados sin los merges.</p>
+      </div>
+
+      <div class="content">
+        <h3>git blame "nombre_archivo"</h3>
+        <div class="content-code">git blame "nombre_archivo"</div>
+        <p>muestra quien hizo cada cosa linea por linea</p>
+      </div>
+
+      <div class="content">
+        <h3>git COMANDO --help</h3>
+        <div class="content-code">git COMANDO --help</div>
+        <p>muestra como funciona el comando.</p>
+      </div>
+
+      <div class="content">
+        <h3>git blame ARCHIVO -Llinea_inicial, linea_final</h3>
+        <div class="content-code">git blame ARCHIVO -Llinea_inicial, linea_final</div>
+        <p>muestra quien hizo cada cosa linea por linea indicándole desde
+          que linea ver ejemplo -L35,50</p>
+      </div>
+
+      <div class="content">
+        <h3>git branch -r</h3>
+        <div class="content-code">git branch -r</div>
+        <p>se muestran todas las ramas remotas</p>
+      </div>
+
+      <div class="content">
+        <h3>git branch -a</h3>
+        <div class="content-code">git branch -a</div>
+        <p>Se muestran todas las ramas tanto locales como remotas</p>
+      </div>
     </div>
 
     <div class="hero" id="hola_mundo">
